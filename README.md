@@ -141,3 +141,15 @@ MyApp/
 * `Roleid` — ключ роли
 * `Rolename` — название роли (“Клиент”, “Менеджер”, “Админ”)
 * `Users` — список пользователей, у которых эта роль
+
+
+![647EDF9C-CBB7-414C-8D38-AC354DCDA3F1](https://github.com/user-attachments/assets/0e99e0cc-c9ee-4b73-be0e-b8f66d08936b)
+
+![AE113343-BCC4-46EE-AF04-4CC12DAE520F](https://github.com/user-attachments/assets/e09abeae-e2d6-46aa-9ccf-bd092ce6a2a0)
+
+![6D2F3674-D60D-46C8-913E-55513A266D02](https://github.com/user-attachments/assets/3a890cb6-eb2a-45bd-82aa-c3e24de90214)
+
+![8B13F67A-299D-4913-ADAA-F1890C6E94C4](https://github.com/user-attachments/assets/6503da49-f75a-43b1-a710-b226201d3c47)
+
+
+
