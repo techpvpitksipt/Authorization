@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="MyApp.DashboardWindow"
+        Width="800" Height="450"
+        WindowStartupLocation="CenterScreen"
+        Title="Главный экран">
+
+  <DockPanel Margin="12">
+    <Border DockPanel.Dock="Top" Padding="10">
+      <Grid ColumnDefinitions="*,Auto">
+        <TextBlock x:Name="UserInfoText" VerticalAlignment="Center"/>
+        <Button Grid.Column="1" Content="Выход" Click="OnLogoutClick"/>
+      </Grid>
+    </Border>
+
+    <TextBlock Text="Пустое окно (дальше будут модули)"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               FontSize="18"/>
+  </DockPanel>
+</Window>

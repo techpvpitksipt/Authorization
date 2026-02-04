@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="MyApp.MainWindow"
+        Width="420" Height="430"
+        WindowStartupLocation="CenterScreen"
+        Title="Вход">
+
+  <StackPanel Margin="20" Spacing="12">
+
+    <TextBlock Text="Авторизация" FontSize="20" FontWeight="Bold"/>
+
+    <TextBlock Text="Логин"/>
+    <TextBox x:Name="LoginBox"/>
+
+    <TextBlock Text="Пароль"/>
+    <TextBox x:Name="PasswordBox" PasswordChar="*"/>
+
+    <!-- CAPTCHA block -->
+    <StackPanel x:Name="CaptchaPanel" IsVisible="False" Spacing="6">
+      <TextBlock Text="Введите CAPTCHA"/>
+
+      <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+        <Border Padding="6" BorderThickness="1" CornerRadius="6">
+          <Image x:Name="CaptchaImage" Width="150" Height="55"/>
+        </Border>
+
+        <Button Content="↻" Width="40" Click="OnRefreshCaptcha"/>
+      </StackPanel>
+
+      <TextBox x:Name="CaptchaBox" Watermark="CAPTCHA (4 символа)"/>
+    </StackPanel>
+
+    <TextBlock x:Name="LockText" Foreground="Orange" IsVisible="False"/>
+    <TextBlock x:Name="ErrorText" Foreground="Red" IsVisible="False"/>
+
+    <StackPanel Orientation="Horizontal" Spacing="10">
+      <Button x:Name="LoginBtn" Content="Войти" Width="120" Click="OnLoginClick"/>
+      <Button Content="Гость" Width="120" Click="OnGuestClick"/>
+    </StackPanel>
+
+  </StackPanel>
+</Window>
